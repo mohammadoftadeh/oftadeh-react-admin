@@ -1,14 +1,31 @@
 {
-  "name": "my-material",
+  "name": "oftadeh-react-admin",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.9.7",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.46",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "chart.js": "^2.9.3",
+    "clsx": "^1.1.0",
+    "draft-js": "^0.11.5",
+    "jodit-react": "^1.0.42",
+    "material-design-icons": "^3.0.1",
+    "material-table": "^1.57.2",
+    "moment": "^2.24.0",
+    "mui-datatables": "^2.14.0",
+    "prismjs": "^1.19.0",
     "react": "^16.13.1",
+    "react-big-calendar": "^0.24.1",
+    "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.0"
+    "react-draft-wysiwyg": "^1.14.4",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "recharts": "^1.8.5"
   },
   "scripts": {
     "start": "react-scripts start",
