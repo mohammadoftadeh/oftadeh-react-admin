@@ -6,7 +6,7 @@ Oftadeh - React Admin Responsive Template is an React app written entirely with 
 
 To view a live demo, [click here](https://oftadeh-react-admin.netlify.com/).
 
-![Oftadeh - React Admin](https://vitateach.com/wp-content/uploads/2020/04/oftadeh-react-admin.png)
+[![Oftadeh - React Admin](https://vitateach.com/wp-content/uploads/2020/04/oftadeh-react-admin.png)](https://youtu.be/PQRki51ixjg)
 
 ## React
 
