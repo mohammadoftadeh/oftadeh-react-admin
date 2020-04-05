@@ -8,28 +8,38 @@ import OftadehPieChart from "../../components/OftadehChart/OftadehPieChart";
 import SimpleTable from "./components/SimpleTable";
 import clsx from "clsx";
 
-const useStyles = makeStyles(them => ({
+const useStyles = makeStyles((them) => ({
   paddingPaper: {
-    padding: "10px 5px 5px 10px"
+    padding: "10px 5px 5px 10px",
   },
   mt: {
-    marginTop: 13
+    marginTop: 13,
   },
   titlePaper: {
-    marginBottom: "16px"
+    marginBottom: "16px",
   },
   visitorChart: {
     // height: "150px"
-  }
+  },
 }));
 
-const DashboardPage = props => {
+const DashboardPage = (props) => {
   const { history } = props;
   const classes = useStyles();
 
   return (
     <OftadehLayout>
       <h1>Dashboard</h1>
+      <iframe
+        title="star repo"
+        src="https://ghbtns.com/github-btn.html?user=mohammadoftadeh&repo=oftadeh-react-admin&type=star"
+        frameworker="0"
+        scrolling="0"
+        width="75px"
+        height="30px"
+        frameBorder="none"
+        style={{ marginBottom: "20px" }}
+      />
       <OftadehBreadcrumbs path={history} />
       <Grid container spacing={2}>
         <Grid className={classes.visitorChart} item xs={12}>

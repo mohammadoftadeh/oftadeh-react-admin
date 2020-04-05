@@ -12,33 +12,33 @@ import OftadehNavLink from "./sections/OftadehNavLink";
 import { Typography } from "@material-ui/core";
 import clsx from "clsx";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   logoBg: {
-    backgroundColor: theme.palette.type !== "dark" && "#18202c"
+    backgroundColor: theme.palette.type !== "dark" && "#18202c",
     // backgroundColor: "#18202c"
   },
   logo: {
     padding: "1rem",
     "& span": {
       display: "block",
-      color: "rgba(41, 113, 245, 0.87)"
-    }
+      color: "rgba(41, 113, 245, 0.87)",
+    },
   },
   navCustom: {
     "& .MuiTypography-root": {
-      fontSize: ".85rem"
+      fontSize: ".85rem",
     },
     "& .MuiListItemIcon-root": {
-      minWidth: "35px"
+      minWidth: "35px",
     },
     "& .MuiCollapse-wrapperInner a": {
-      paddingLeft: "50px"
-    }
-  }
+      paddingLeft: "50px",
+    },
+  },
 }));
 
-const OftadehNavigation = props => {
+const OftadehNavigation = (props) => {
   const classes = useStyles(props);
 
   return (
@@ -53,10 +53,20 @@ const OftadehNavigation = props => {
           &copy; OFTADEH
           <span>React Admin</span>
         </Typography>
+        <iframe
+          title="star repo"
+          src="https://ghbtns.com/github-btn.html?user=mohammadoftadeh&repo=oftadeh-react-admin&type=star&size=large"
+          frameworker="0"
+          scrolling="0"
+          width="75px"
+          height="30px"
+          frameBorder="none"
+          style={{ margin: "0 0 20px 80px" }}
+        />
       </div>
       <Divider />
       <List className={classes.navCustom}>
-        {navigationConfig.map(item => (
+        {navigationConfig.map((item) => (
           <React.Fragment key={item.id}>
             {item.type === "group" && <OftadehNavGroup item={item} />}
 
